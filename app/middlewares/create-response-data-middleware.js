@@ -1,5 +1,5 @@
 const createResponseDataMiddleware = (req, res, next) => {
-    res.data = {};
+    res.data = [];
     next();
 };
 

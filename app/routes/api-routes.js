@@ -28,13 +28,6 @@ router.get(
     sendResponseMiddleware
 );
 router.get(
-    '/forecast',
-    createResponseDataMiddleware,
-    getLocationMiddleware,
-    getForecastMiddleware,
-    sendResponseMiddleware
-);
-router.get(
     '/forecast/:city?',
     createResponseDataMiddleware,
     getLocationMiddleware,

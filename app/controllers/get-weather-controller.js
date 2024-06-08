@@ -1,5 +1,7 @@
-const getWeatherController = (req, res, next) => {
-    console.log('getWeather');
+const { getCurrentWeather } = require('../services/weather-map-service');
+
+const getWeatherController = (lat, lon) => {
+    return getCurrentWeather(lat, lon);
 };
 
 module.exports = {

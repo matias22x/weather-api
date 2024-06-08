@@ -1,9 +1,15 @@
-const { getLocation } = require('../services/ip-api-service');
+const ipApiService = require('../services/ip-api-service');
+const weatherMap = require('../services/weather-map-service');
 
-const getLocationController = (location) => {
-    return getLocation();
+const getLocationFromWeatherMapController = (location, limit) => {
+    return weatherMap.getLocation(location, limit);
+};
+
+const getLocationFromIpApiController = () => {
+    return ipApiService.getLocation();
 };
 
 module.exports = {
-    getLocationController
+    getLocationFromWeatherMapController,
+    getLocationFromIpApiController
 };
