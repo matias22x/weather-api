@@ -18,7 +18,7 @@ npm run test
 
 # ENDPOINTS
 
-/location
+## /location
 Get actual location based on IP-API.
 
 Response:
@@ -34,7 +34,7 @@ Response:
 ]
 ```
 
-/current/:city?
+## /current/:city?
 If don't pass city, get current location's weather based on IP-API and using Open Weather Map. For default get 1 result. If pass query param limit, results are based in the limit.
 
 Response:
@@ -53,7 +53,7 @@ Response:
 ```
 
 
-/forecast/:city?
+## /forecast/:city?
 If don't pass city, get current location's forecast for 5 days based on IP-API and using Open Weather Map. For default get 1 result. If pass query param limit, results are based in the limit.
 
 Response:
