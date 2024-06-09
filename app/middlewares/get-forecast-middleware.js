@@ -17,7 +17,8 @@ const getForecastMiddleware = async (req, res, next) => {
     } catch(error) {
         console.error(`Error getting actual forecast ${error.message}`);
         res.status(400).send({message: 'Error getting actual forecast'});
-    }};
+    }
+};
 
 module.exports = {
     getForecastMiddleware
