@@ -2,7 +2,6 @@ const axios = require('axios');
 const { weatherMap } = require('../config/config');
 
 const getLocation = (location, limit) => {
-    console.log(`Getting data from ${location} with a limit of cities of ${limit}`);
     const configuration = {
         method: 'get',
         url: `${weatherMap.url}/geo/1.0/direct?q=${location}&limit=${limit}&appid=${weatherMap.apiKey}`
