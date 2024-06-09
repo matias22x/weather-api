@@ -5,7 +5,7 @@
 npm run start
 ```
 
-# Run tests with docker
+# Run tests
 ```
 npm run test
 ```
